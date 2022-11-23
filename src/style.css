@@ -50,7 +50,11 @@ html{
         padding-right: 10px;
         text-transform: uppercase;
     }
-
+    span.text1 {
+        background-color: var(--green);
+        border-radius: 10px 0 0 10px;
+        padding: 10px;
+    }
     .menu:hover span.text {
         padding-right: 10px;
         text-transform: uppercase;
@@ -157,12 +161,11 @@ html{
 
     .text-center.topheader.aboutheader {
         width: 90%;
-        height: 10vh;
         margin: auto;
         background: rgba(181, 181, 181, 0.7);
     }
     .AboutSection{
-        height: 45vh;
+        height: 255px;
         background-image: url('./assets/Rectangle\ 10.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -170,11 +173,16 @@ html{
         width: 100%;
         overflow-x: hidden;
     }
+    .newabout{
+        background-color: var(--green) ;
+    }
     .AboutSectionContent{
-        height: 45vh;
+        height: fit-content;
         background-color: rgb(185, 178, 178);
         overflow: hidden;
         width: 90%;
+        min-height: 340px;
+        max-width: 370px;
         margin: auto;
 
     }
