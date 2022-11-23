@@ -6,7 +6,7 @@ import SideBar from "../Common/SideBar";
 const Home = () => {
   return (
     <React.Fragment>
-        <div className="container">
+        <div className="container ">
             <Header />
             <SideBar />
             <Footer />

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link ,BrowserRouter } from 'react-router-dom';
 import img1 from '../assets/image 5.png'
 import img2 from '../assets/image 8.png'
 import img3 from '../assets/image 6.png'
@@ -9,14 +10,18 @@ const SideBar = () => {
     <React.Fragment>
         <div className="container-fluid">
             <div className='menu'>
+                
                 <div className='item'>
                     <span className='whitebg'>
-                    <span className='text'>About</span>
-                    <span className='navimg'>
-                        <img src={img1} alt="img" />
-                    </span>
+                        <Link to='/about'>
+                            <span className='text'>About</span>
+                            <span className='navimg'>
+                                <img src={img1} alt="img" />
+                            </span>
+                    </Link>
                     </span>
                 </div>
+                
                 <div className='item'>
                 <span className='whitebg'>
                 <span className='text'>ESG</span>

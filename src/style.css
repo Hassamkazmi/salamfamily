@@ -156,11 +156,13 @@ html{
     }
 
     .text-center.topheader.aboutheader {
-        width: 100%;
+        width: 90%;
+        height: 10vh;
+        margin: auto;
         background: rgba(181, 181, 181, 0.7);
     }
     .AboutSection{
-        height: 266px;
+        height: 45vh;
         background-image: url('./assets/Rectangle\ 10.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -169,9 +171,21 @@ html{
         overflow-x: hidden;
     }
     .AboutSectionContent{
-        height: 277px;
+        height: 45vh;
         background-color: rgb(185, 178, 178);
         overflow: hidden;
+        width: 90%;
+        margin: auto;
+
+    }
+    .AboutSectionContent > p{
+        text-align: start;
+        padding-top: 10px;
+    }
+    .container-sm{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        background-color: rgb(185, 178, 178);
     }
 }
 
