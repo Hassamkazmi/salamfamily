@@ -1,0 +1,178 @@
+:root {
+    --blue: #0E76BC;
+    --white: #ffffff;
+    --green: #00A651;
+    --blackfont: #000000;
+    --frontfont: #ffffff;
+    --sblue:rgb(13 62 92 / 55%);
+  }
+  *{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden !important;
+    position:relative;
+    z-index: 9999999;
+}
+html{
+    overflow-x: hidden !important;
+
+}
+@media (max-width: 480px) and (min-width: 375px){
+    /* Top bar */
+    .topheader{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .container{
+        background-image: url('./assets/Rectangle\ 1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+     /* Side Bar */
+     .menu {
+        display: flex;
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        gap: 15px;
+        top: 25%;
+        transition: all 700ms ease-in-out;
+    }
+   
+     span.text {
+        padding-right: 10px;
+        text-transform: uppercase;
+    }
+
+    .menu:hover span.text {
+        padding-right: 10px;
+        text-transform: uppercase;
+    }
+    
+ /* Footer Bar */
+    .footerbottom{
+        position: fixed;
+        height: 62px;
+        width: 100%;
+        bottom: 0px;
+        left: 0;
+    }
+    .call_btn{
+        background-color: var(--green);
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 15px;
+        color: var(--frontfont);
+        font-weight: 300;
+        width: 110px;
+
+    }
+    .call_btn >p{padding-top: 16px;}
+    .Calculate_btn  >p{padding-top: 16px;}
+    .Chat_btn> p{ padding-top: 16px;}
+    .Calculate_btn{
+        background-color: var(--white);
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 15px;
+        color: var(--blackfont);
+        font-weight: 300;
+        width: 110px;
+    }
+    .Chat_btn{
+        background-color: var(--blue);
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 15px;
+        color: var(--frontfont);
+        font-weight: 300;
+        width: 110px;
+    }
+    .item {
+        justify-content: end;
+        display: flex;
+        transition: all 700ms ease-in-out;
+    }
+    span.whitebg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 700ms ease-in-out;
+        position: relative;
+    }
+    span.text {
+        background: rgb(13 62 92 / 55%);
+        height: 45px;
+        border-radius: 10px 0px 0px 10px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right:0%;
+        z-index: 9;
+        opacity: 0;
+        color: #fff;
+        transition: all 700ms ease-in-out;
+        font-size: 11px;
+    }
+    .navimg{
+        background: rgb(13 62 92 / 55%);
+        color: var(--frontfont);
+        height: 45px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        z-index: 999999;
+        position: relative;
+        border-radius: 10px 0px 0px 10px;
+        transition: all 700ms ease-in-out;
+    }
+    .menu:hover span.text{
+        transition: all 700ms ease-in-out;
+        position: absolute;
+        right: 100%;
+        z-index: 9999;
+        width: auto;
+        opacity: 1;
+        font-size: 11px;
+    }
+    .menu:hover .navimg{
+        border-radius: 0px 0px 0px 0px;
+        transition: all 700ms ease-in-out;
+
+    }
+
+    .text-center.topheader.aboutheader {
+        width: 100%;
+        background: rgba(181, 181, 181, 0.7);
+    }
+    .AboutSection{
+        height: 266px;
+        background-image: url('./assets/Rectangle\ 10.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .AboutSectionContent{
+        height: 277px;
+        background-color: rgb(185, 178, 178);
+        overflow: hidden;
+    }
+}
+
+
