@@ -59,7 +59,10 @@ html{
         padding-right: 10px;
         text-transform: uppercase;
     }
-    
+    .linkstyle{
+        list-style: none;
+        text-decoration: none;
+    }
  /* Footer Bar */
     .footerbottom{
         position: fixed;
@@ -181,8 +184,8 @@ html{
         background-color: rgb(185, 178, 178);
         overflow: hidden;
         width: 90%;
-        min-height: 340px;
-        max-width: 370px;
+        min-height: 360px;
+        max-width: 380px;
         margin: auto;
 
     }

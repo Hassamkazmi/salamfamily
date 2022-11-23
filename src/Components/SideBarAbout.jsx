@@ -12,7 +12,7 @@ const SideBar = () => {
             <div className='menu'>
                 <div className='item'>
                     <span className='whitebg'>
-                   <Link to='/' >
+                   <Link to='/' className='linkstyle'>
                     <span className='navimg newabout'>
                     <span className='text1'>Home</span>
                         <img src={img1} alt="img" />
