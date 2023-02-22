@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BuyNow from "../assets/Buy.png";
 
 const Footer = () => {
@@ -7,10 +8,12 @@ const Footer = () => {
       <div className="container-fluid text-center footerbottom">
         <div className="row">
           <div className="col call_btn">
-            <button>
-              <img src={BuyNow} alt="call" />
-              Buy Now
-            </button>
+            <Link to="/buynow">
+              <button>
+                <img src={BuyNow} alt="call" />
+                Buy Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
