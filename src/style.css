@@ -298,12 +298,12 @@ html {
 
     /* about */
     .section {
-        width: 340px;
-        margin-top: 98px;
-        padding-right: 120px;
-
+        margin-top: 97px;
         height: 400px;
         overflow-y: scroll;
+        /* padding: 0 80px; */
+        padding-left: 40px;
+        padding-right: 104px;
     }
 
     .section>p {
