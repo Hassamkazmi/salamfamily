@@ -4,6 +4,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import './style.css';
 import BuyNow from './pages/BuyNow';
+import Product from './pages/product';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' exact element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/buynow' element={<BuyNow />} />
+          <Route path='/product' element={<Product />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>

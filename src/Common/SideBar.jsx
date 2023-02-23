@@ -31,10 +31,12 @@ const SideBar = () => {
           </div>
           <div className="item ">
             <span className="whitebg">
-              <span className="text">Products</span>
-              <span className="navimg">
-                <img src={Products} alt="img" />
-              </span>
+              <Link to="/product">
+                <span className="text">Products</span>
+                <span className="navimg">
+                  <img src={Products} alt="img" />
+                </span>
+              </Link>
             </span>
           </div>
           <div className="item iteminner">

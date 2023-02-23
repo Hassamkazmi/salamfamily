@@ -328,6 +328,16 @@ html {
         text-align: center;
         display: flex;
         justify-content: center;
+        color: var(--frontfont);
+        height: 54px;
+        width: 65px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        z-index: 999999;
+        position: relative;
+        border-radius: 10px 0px 0px 10px;
+        transition: all 700ms ease-in-out;
     }
 
     .bgColor {
@@ -336,6 +346,17 @@ html {
         text-align: center;
         display: flex;
         justify-content: center;
+        color: var(--frontfont);
+        height: 54px;
+        width: 65px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        z-index: 999999;
+        position: relative;
+        border-radius: 10px 0px 0px 10px;
+        transition: all 700ms ease-in-out;
+
 
 
     }
@@ -513,17 +534,17 @@ html {
         color: #0E76BC;
     }
 
-    .innerbuyNow>form {
+    .form {
         margin-top: 30px;
 
     }
 
 
-    .innerbuyNow>form>input {
+    .innerbuyNow>div>input {
         border-radius: 30px;
         width: 80vw;
         height: 60px;
-        margin: 10px auto;
+        margin: 18px auto;
         border: none;
         align-items: center;
         display: flex;
@@ -534,5 +555,60 @@ html {
         font-size: 17.1424px;
         line-height: 17px;
 
+    }
+
+    .innerbuyNow>div>input:focus {
+        outline: none;
+
+    }
+
+    .formSubmit {
+        display: flex;
+        justify-content: center;
+
+        position: fixed;
+        bottom: 100px;
+        right: 6px;
+    }
+
+
+    .formSubmit>button {
+
+        border-radius: 30px;
+        margin: 0 10px;
+        padding: 15px 50px;
+
+        border: none;
+
+
+        color: var(--white);
+        text-transform: uppercase;
+
+    }
+
+    .formSubmit> :first-child {
+        background: #757675;
+    }
+
+    .formSubmit> :last-child {
+        background: var(--green);
+    }
+
+    /* product features  */
+    .features {
+
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        color: var(--blackfont);
+    }
+
+    .features>h3 {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        color: var(--green);
     }
 }
