@@ -1,17 +1,30 @@
 import React from "react";
 import Logo from "../assets/PdYUvU.png";
+import header1 from "../assets/header1.png";
+import headetr2 from "../assets/header2.png";
 import FaBar from "../assets//Group 6.png";
 const Header = ({ show, setshow }) => {
   return (
     <React.Fragment>
-      <div className="text-center topheader aboutheader">
-        <span>
-          <img src={Logo} alt="logo" />
-        </span>
-        <span onClick={() => setshow(true)}>
-          <img src={FaBar} alt="logo" />
-        </span>
+      <div className="topheader ">
+        <div className="topheader1">
+          <div>
+            <img src={Logo} alt="logo" />
+          </div>
+
+          <div className="headcontent">
+            <span className="headercontent">
+              <button>Lodge A claim</button>
+              <img src={header1} alt="" />
+              <img src={headetr2} alt="logo" />
+            </span>
+            <span>
+              <img onClick={() => setshow(true)} src={FaBar} alt="logo" />
+            </span>
+          </div>
+        </div>
       </div>
+      <div className="topheadershadow"></div>
     </React.Fragment>
   );
 };

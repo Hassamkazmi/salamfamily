@@ -23,10 +23,13 @@ const SideBar = () => {
 
           <div className="item">
             <span className="whitebg">
-              <span className="text">ESG</span>
-              <span className="navimg">
-                <img src={ESG} alt="img" />
-              </span>
+              <Link to="/esg">
+                {" "}
+                <span className="text">ESG</span>
+                <span className="navimg">
+                  <img src={ESG} alt="img" />
+                </span>
+              </Link>
             </span>
           </div>
           <div className="item ">

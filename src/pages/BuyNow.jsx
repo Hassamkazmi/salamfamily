@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Fade } from "react-reveal";
 import { useNavigate } from "react-router-dom";
+import Header from "../Common/Header";
 
 const BuyNow = () => {
   const navigate = useNavigate();
@@ -9,13 +10,63 @@ const BuyNow = () => {
 
   return (
     <Fragment>
-      <div className="buyNowMain">
+      <div className="buyNowMain fordesktop">
+        <Header />
+        {!show ? (
+          <>
+            <Fade left>
+              <div className="innerbuyNow">
+                <h4> Customer information </h4>
+                <div className="form">
+                  <input placeholder="First Name" />
+
+                  <input placeholder="Last Name" />
+
+                  <input placeholder="Gender" />
+
+                  <input placeholder="Date of Birth" />
+                  <span className=" formSubmit">
+                    <button onClick={() => navigate("/")}>Back </button>
+
+                    <button onClick={() => setshow(true)}>Next</button>
+                  </span>
+                </div>
+              </div>
+            </Fade>
+          </>
+        ) : (
+          <Fade right>
+            <div className="innerbuyNow">
+              <h4> Plan Information </h4>
+              <div className="form">
+                <input placeholder="Contribution" />
+
+                <input placeholder="Contribution Frequency" />
+
+                <input placeholder="Cover Multiple" />
+
+                <input placeholder="Contribution Term" />
+                <input placeholder="Benefit Term" />
+                <input placeholder="Face Value" />
+
+                <span className=" formSubmit">
+                  <button onClick={() => setshow(false)}> back</button>
+                  <button onClick={() => setshow(true)}>Submit</button>
+                </span>
+              </div>
+            </div>
+          </Fade>
+        )}
+      </div>
+
+      {/* Buy Now for mobile */}
+      <div className="buyNowMain formoblie">
         {!show ? (
           <>
             {" "}
             <Fade left>
               <div className="buyNowHeader">
-                <h4> Customer information </h4>
+                <h4> Customer information</h4>
               </div>
               <div className="innerbuyNow">
                 <div className="form">

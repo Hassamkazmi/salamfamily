@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 const AboutArrange = () => {
   return (
     <Fade left>
-      <div className="section sectionArrange">
+      <div className="section features">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

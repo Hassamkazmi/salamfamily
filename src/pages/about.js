@@ -16,7 +16,7 @@ const About = () => {
       ) : (
         <>
           <Fade right duration={1000}>
-            <div className="container-sm AboutSection">
+            <div className=" AboutSection">
               <Header show={show} setshow={setshow} />
               <div className="d-flex justify-content-between">
                 <SideBar />

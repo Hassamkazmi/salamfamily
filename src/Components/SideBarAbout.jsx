@@ -33,18 +33,16 @@ const SideBar = () => {
           </div>
           <div className="item">
             <span className="whitebg">
-              <Link to="/about" className="linkstyle">
-                <span
-                  className={Tabvalue === "about" ? "aboutactive" : "bgColor"}
-                  onClick={() => myfun("about")}
-                >
-                  {Tabvalue === "about" ? (
-                    <img src={about2} alt="img" />
-                  ) : (
-                    <img src={about2b} alt="img" />
-                  )}
-                </span>
-              </Link>
+              <span
+                className={Tabvalue === "about" ? "aboutactive" : "bgColor"}
+                onClick={() => myfun("about")}
+              >
+                {Tabvalue === "about" ? (
+                  <img src={about2} alt="img" />
+                ) : (
+                  <img src={about2b} alt="img" />
+                )}
+              </span>
             </span>
           </div>
           <div className="item ">

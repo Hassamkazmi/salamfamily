@@ -57,6 +57,24 @@ const data = {
             "subtitle": "GOVERNANCE",
             "description": "Transparency and governance have been the foundation of our culture since the beginning. We spare no cost on our commitments to governance and transparency, setting an example for those around us."
         }
+    ],
+    Governance: [
+        {
+            "title": "GOVERNANCE",
+            "description": "Transparency and governance have been the foundation of our culture since the beginning. We spare no cost on our commitments to governance and transparency, setting an example for those around us."
+        }
+    ],
+    Environment: [
+        {
+            "title": "ENVIRONMENT",
+            "description": "At Salaam Takaful, we are committed to a greener future both internally and externally. Our initiatives in green financing and complete digitization of organizational processes reflect our efforts to minimize consumption and be a pioneer in the digital takaful industry."
+        }
+    ],
+    Social: [
+        {
+            "title": "SOCIAL",
+            "description": "Takaful is based on the idea of social protection and mutual cooperation, which aligns with our mission to uplift society. Our contributions to the community include health and wellness camps, parametric-based crops for farmers' resilience, and the MTO program for Madaris graduates, impacting thousands of lives through our health programs."
+        }
     ]
 }
 export default data;

@@ -7,11 +7,12 @@ import BuyNow from './pages/BuyNow';
 import Product from './pages/product';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import Esg from './pages/esg';
 
 function App() {
   const [userIsDesktop, setUserIsDesktop] = useState(true);
   useEffect(() => {
-    window.innerWidth < 480 ? setUserIsDesktop(true) : setUserIsDesktop(false);
+    window.innerWidth < 4000 ? setUserIsDesktop(true) : setUserIsDesktop(false);
   }, [userIsDesktop]);
   return (
     <React.Fragment>
@@ -23,6 +24,7 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/buynow' element={<BuyNow />} />
             <Route path='/product' element={<Product />} />
+            <Route path='/esg' element={<Esg />} />
           </Routes>
         </BrowserRouter> : <>This Site is not Available on this screen size</>}
     </React.Fragment>

@@ -1,12 +1,12 @@
 import React from "react";
 import Footer from "../Common/Footer";
 import Header from "../Components/AboutHeader";
-import SideBar from "../Components/ProductSidebar";
+import SideBar from "../Components/SidebarEsg";
 import Fade from "react-reveal/Fade";
 import MobileMenu from "../Common/MobileMenu";
 import { useState } from "react";
 
-const Product = () => {
+const Esg = () => {
     const [show, setshow] = useState(false);
 
     return (
@@ -16,7 +16,7 @@ const Product = () => {
             ) : (
                 <>
                     <Fade right duration={1000}>
-                        <div className="container-fluid AboutSection">
+                        <div className="AboutSection">
                             <Header show={show} setshow={setshow} />
                             <div className="d-flex justify-content-between">
                                 <SideBar />
@@ -29,4 +29,4 @@ const Product = () => {
         </React.Fragment>
     );
 };
-export default Product;
+export default Esg;
