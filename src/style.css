@@ -1,14 +1,14 @@
 :root {
-    --blue: #0E76BC;
+    --blue: #0e76bc;
     --white: #ffffff;
-    --green: #00A651;
+    --green: #00a651;
     --blackfont: #000000;
     --frontfont: #ffffff;
     --sblue: rgb(13 62 92 / 55%);
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -19,22 +19,16 @@ body {
 
 html {
     overflow-x: hidden !important;
-
 }
 
 @media (max-width: 480px) and (min-width: 375px) {
-
     .topheader {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-
-
     }
 
     .topheaderbox {
-
-
         box-shadow: -8px 8px 56px 60px #ffffff;
 
         position: relative;
@@ -56,7 +50,7 @@ html {
     }
 
     .main {
-        background-image: url('./assets/Background.jpg');
+        background-image: url("./assets/Background.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -110,7 +104,6 @@ html {
         justify-content: center;
         display: flex;
         align-items: center;
-
     }
 
     .call_btn>a>button {
@@ -123,9 +116,8 @@ html {
         border-radius: 50px;
         width: 92vw;
         border: none;
-        font-family: 'Proxima Nova';
+        font-family: "Proxima Nova";
         font-style: normal;
-
     }
 
     .call_btn>button>img {
@@ -225,18 +217,15 @@ html {
     .menu:hover .navimg {
         border-radius: 0px 0px 0px 0px;
         transition: all 700ms ease-in-out;
-
     }
 
     .text-center.topheader.aboutheader {
         width: 90%;
         margin: auto;
-
     }
 
     .AboutSection {
-
-        background-image: url('./assets/AboutBackground.png');
+        background-image: url("./assets/AboutBackground.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -252,8 +241,6 @@ html {
         border-radius: 10px 0px 0px 10px !important;
     }
 
-
-
     .AboutSectionContent>p {
         text-align: start;
         padding-top: 10px;
@@ -262,7 +249,6 @@ html {
     .container-sm {
         padding-left: 0 !important;
         padding-right: 0 !important;
-
     }
 
     /* leftSidbar */
@@ -299,21 +285,19 @@ html {
     /* about */
     .section {
         margin-top: 97px;
-        height: 400px;
+        height: 50vh;
         overflow-y: scroll;
-        /* padding: 0 80px; */
         padding-left: 40px;
         padding-right: 104px;
     }
 
     .section>p {
-
-        font-family: 'Proxima Nova';
+        font-family: "Proxima Nova";
         font-style: normal;
         font-weight: 400;
         font-size: 17px;
 
-        padding: 1px 3px
+        padding: 1px 3px;
     }
 
     .sectionArrange {
@@ -321,8 +305,6 @@ html {
     }
 
     .aboutactive {
-
-
         background: var(--green);
         border-radius: 10px 0px 0px 10px !important;
         text-align: center;
@@ -356,12 +338,7 @@ html {
         position: relative;
         border-radius: 10px 0px 0px 10px;
         transition: all 700ms ease-in-out;
-
-
-
     }
-
-
 
     .linkstyle:active {
         background: var(--green);
@@ -370,16 +347,13 @@ html {
 
     /* mobilemenu */
     .mobileMenu {
-        background-image: url('./assets/mobilemenubg.jpg');
+        background-image: url("./assets/mobilemenubg.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
         overflow: hidden;
         transition: all ease-in-out;
-
-
-
     }
 
     .accordion-item {
@@ -392,8 +366,6 @@ html {
 
         position: fixed;
         width: 100vw;
-
-
     }
 
     .menuBar {
@@ -402,7 +374,6 @@ html {
     }
 
     .menuBar>span {
-
         position: absolute;
         top: 6px;
         right: 26px;
@@ -410,30 +381,22 @@ html {
     }
 
     .accordion-button {
-        color:
-            #676767 !important;
+        color: #676767 !important;
         background-color: var(--bs-accordion-btn-bg) !important;
-        font-family: 'Proxima Nova';
+        font-family: "Proxima Nova";
         font-style: normal;
         font-weight: 400;
         font-size: 17px;
-
-
     }
 
-
-
     .accordion-body {
-        background: #15578C;
+        background: #15578c;
         color: var(--white);
-
-
     }
 
     .menuBar li {
         list-style: none;
         padding: 10px 0px;
-
     }
 
     .accordion {
@@ -449,20 +412,16 @@ html {
         color: #676767;
     }
 
-
     .accordion-button:not(.collapsed)::after {
         content: "-" !important;
         transform: none !important;
         font-size: 20px;
         font-weight: 400;
         color: #676767;
-
     }
 
     .AboutEsg {
-
         margin-top: 20px;
-
     }
 
     .AboutEsgContent {
@@ -470,7 +429,7 @@ html {
     }
 
     .AboutEsg>div>p {
-        font-family: 'Proxima Nova';
+        font-family: "Proxima Nova";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -479,12 +438,10 @@ html {
 
     .AboutEsg>div>img {
         height: 70%;
-
     }
 
     .buyNowMain {
-
-        background-image: url('./assets/buynowbg.jpg');
+        background-image: url("./assets/buynowbg.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -494,8 +451,7 @@ html {
     }
 
     .innerbuyNow {
-
-        background-image: url('./assets/buynowinner.jpg');
+        background-image: url("./assets/buynowinner.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -505,9 +461,7 @@ html {
         overflow-x: hidden;
         border-radius: 28px;
         box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-
     }
-
 
     .buyNowHeader {
         height: 100px;
@@ -522,8 +476,7 @@ html {
     }
 
     .buyNowHeader>h4 {
-
-        font-family: 'Proxima Nova';
+        font-family: "Proxima Nova";
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -531,14 +484,12 @@ html {
 
         text-transform: uppercase;
 
-        color: #0E76BC;
+        color: #0e76bc;
     }
 
     .form {
         margin-top: 30px;
-
     }
-
 
     .innerbuyNow>div>input {
         border-radius: 30px;
@@ -549,17 +500,15 @@ html {
         align-items: center;
         display: flex;
         padding: 10px 22px;
-        font-family: 'Proxima Nova';
+        font-family: "Proxima Nova";
         font-style: normal;
         font-weight: 400;
         font-size: 17.1424px;
         line-height: 17px;
-
     }
 
     .innerbuyNow>div>input:focus {
         outline: none;
-
     }
 
     .formSubmit {
@@ -571,19 +520,15 @@ html {
         right: 6px;
     }
 
-
     .formSubmit>button {
-
         border-radius: 30px;
         margin: 0 10px;
         padding: 15px 50px;
 
         border: none;
 
-
         color: var(--white);
         text-transform: uppercase;
-
     }
 
     .formSubmit> :first-child {
@@ -596,8 +541,7 @@ html {
 
     /* product features  */
     .features {
-
-        font-family: 'Proxima Nova';
+        font-family: "Proxima Nova";
         font-style: normal;
         font-weight: 400;
         font-size: 16 px;
@@ -605,11 +549,10 @@ html {
     }
 
     .features>h3 {
-        font-family: 'Proxima Nova';
+        font-family: "Proxima Nova";
         font-style: normal;
         font-weight: 700;
         font-size: 22px;
         color: var(--green);
     }
-
 }
