@@ -10,11 +10,12 @@ const ProductFeatures = () => {
         {data.Product.map((item, index) => (
           <>
             <h3>{item.title}</h3>
+            <p>{item.description}</p>
             <ReadMoreReact
               text={item.description}
-              min={100}
-              ideal={120}
-              max={300}
+              min={50}
+              ideal={90}
+              max={120}
               readMoreText="read more"
             />
           </>

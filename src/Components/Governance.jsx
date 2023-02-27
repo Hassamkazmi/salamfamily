@@ -11,11 +11,12 @@ const Governance = () => {
           {data.Governance.map((item, index) => (
             <>
               <h3>{item.title}</h3>
+              <p>{item.description}</p>
               <ReadMoreReact
                 text={item.description}
-                min={200}
-                ideal={300}
-                max={400}
+                min={100}
+                ideal={120}
+                max={200}
                 readMoreText="read more"
               />
             </>

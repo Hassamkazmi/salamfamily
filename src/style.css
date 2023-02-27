@@ -11,11 +11,19 @@
     font-family: "Roboto", sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none !important;
+}
+
 body {
     overflow-x: hidden !important;
     position: relative;
     z-index: 9999999;
     overflow-y: hidden !important;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 html {
@@ -28,6 +36,11 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+.display-text-group {
+    display: none;
+
 }
 
 .call_btn>a>button {
@@ -338,8 +351,7 @@ span.text {
     font-family: "Proxima Nova";
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-
+    font-size: 21px;
     padding: 1px 3px;
 }
 
@@ -612,9 +624,8 @@ span.text {
     font-style: normal;
     width: 70%;
     font-weight: 400;
-
     color: var(--blackfont);
-    text-align: center;
+
 }
 
 .main {
@@ -633,7 +644,7 @@ span.text {
     font-family: "Proxima Nova" !important;
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 48px;
     color: var(--green);
 }
 
@@ -691,7 +702,7 @@ span.text {
     }
 
     .topheaderbox {
-        box-shadow: -8px 8px 62px 52px var(--white) !important;
+        box-shadow: -8px 8px 36px 52px var(--white) !important;
         position: relative;
     }
 
@@ -768,17 +779,10 @@ span.text {
     }
 
     .call_btn>a>button {
-        background-color: var(--green);
-        height: 62px;
-        font-size: 21px;
-        margin: auto;
-        color: var(--frontfont);
-        font-weight: 300;
+
         border-radius: 50px !important;
         width: 92vw !important;
-        border: none;
-        font-family: "Proxima Nova";
-        font-style: normal;
+
     }
 
     .call_btn>button>img {
@@ -1211,14 +1215,27 @@ span.text {
     }
 
     .features>h3 {
-        font-family: "Proxima Nova";
-        font-style: normal;
+
         font-weight: 700;
         font-size: 28px;
         color: var(--green);
     }
 
+    .display-text-group {
+        font-size: 20px;
+        line-height: 33px;
+        display: block !important;
+    }
+
+    .AboutEsg {
+        overflow: hidden !important;
+    }
+
     .headercontent {
+        display: none;
+    }
+
+    .section>p {
         display: none;
     }
 }

@@ -11,11 +11,13 @@ const Environment = () => {
           {data.Environment.map((item, index) => (
             <>
               <h3>{item.title}</h3>
+              <p>{item.description}</p>
               <ReadMoreReact
+                className="mobileClass"
                 text={item.description}
-                min={200}
-                ideal={220}
-                max={400}
+                min={100}
+                ideal={120}
+                max={200}
                 readMoreText="read more"
               />
             </>

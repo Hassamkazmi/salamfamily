@@ -11,6 +11,7 @@ const Social = () => {
           {data.Social.map((item, index) => (
             <>
               <h3>{item.title}</h3>
+              <p>{item.description}</p>
               <ReadMoreReact
                 text={item.description}
                 min={200}

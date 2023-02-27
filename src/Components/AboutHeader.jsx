@@ -3,13 +3,16 @@ import Logo from "../assets/PdYUvU.png";
 import header1 from "../assets/header1.png";
 import headetr2 from "../assets/header2.png";
 import FaBar from "../assets//Group 6.png";
+import { Link } from "react-router-dom";
 const Header = ({ show, setshow }) => {
   return (
     <React.Fragment>
       <div className="topheader ">
         <div className="topheader1">
           <div>
-            <img src={Logo} alt="logo" />
+            <Link to="/">
+              <img src={Logo} alt="logo" />
+            </Link>
           </div>
 
           <div className="headcontent">
